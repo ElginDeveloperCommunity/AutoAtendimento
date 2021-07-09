@@ -17,5 +17,5 @@ Todas as funcionalidades do pacote e os demais exemplos estão disponíveis nos 
 
 ### Exemplos
 =================  
-- [Delphi]().
+- [Delphi](https://github.com/ElginDeveloperCommunity/AutoAtendimento/tree/master/Elgin/Self%20Checkout/Exemplos/Delphi_Exemplo_E1Poste).
 

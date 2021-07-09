@@ -1,4 +1,4 @@
-# Auto Atendimento
+# Auto Atendimento Elgin
 
 Repositório para terminais de Auto Atendimento Elgin.
 

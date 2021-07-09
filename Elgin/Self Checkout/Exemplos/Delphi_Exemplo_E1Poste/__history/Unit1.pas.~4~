@@ -1,0 +1,73 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, FuncoesDLl;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Edit1: TEdit;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    isConected:bool;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button5Click(Sender: TObject);
+var
+ret : Integer;
+begin
+   if isConected then
+   begin
+      ret := FuncoesDLL.AbrePortaSerial(Edit1.Text);
+      ShowMessage(IntToStr(ret));
+
+      if ret = 0 then
+      begin
+        Button1.Caption := 'Desconectar';
+        isConected := true;
+      end
+      else
+      begin
+        isConected := false;
+      end;
+   end
+   else
+   begin
+      ret := FuncoesDLL.FechaPortaSerial();
+      ShowMessage(IntToStr(ret));
+
+      if ret = 0 then
+      begin
+        Button1.Caption := 'Conectar';
+        isConected := false;
+      end
+      else
+      begin
+        isConected := true;
+      end;
+   end;
+
+
+end;
+
+end.

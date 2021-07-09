@@ -1,0 +1,7 @@
+unit FuncoesDLL;
+
+interface
+  Function AbrePortaSerial(dados:AnsiString):Integer; stdcall; external 'E1_Poste01.dll'
+implementation
+
+end.

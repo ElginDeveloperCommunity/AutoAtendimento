@@ -1,0 +1,103 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 229
+  ClientWidth = 333
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 40
+    Top = 91
+    Width = 113
+    Height = 25
+    Caption = 'Ligar LED VERDE'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 40
+    Top = 122
+    Width = 113
+    Height = 25
+    Caption = 'Ligar LED AMARELO'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 40
+    Top = 153
+    Width = 113
+    Height = 25
+    Caption = 'Ligar LED VERMELHO'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 40
+    Top = 184
+    Width = 113
+    Height = 25
+    Caption = 'Ligar SIRENE'
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 40
+    Top = 28
+    Width = 75
+    Height = 25
+    Caption = 'Conectar'
+    TabOrder = 4
+    OnClick = Button5Click
+  end
+  object Edit1: TEdit
+    Left = 40
+    Top = 59
+    Width = 249
+    Height = 21
+    TabOrder = 5
+    Text = 'COM11'
+  end
+  object Button6: TButton
+    Left = 159
+    Top = 91
+    Width = 130
+    Height = 25
+    Caption = 'Desligar LED VERDE'
+    TabOrder = 6
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 159
+    Top = 122
+    Width = 130
+    Height = 25
+    Caption = 'Desligar LED AMARELO'
+    TabOrder = 7
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 159
+    Top = 153
+    Width = 130
+    Height = 25
+    Caption = 'Desligar LED VERMELHO'
+    TabOrder = 8
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 159
+    Top = 184
+    Width = 130
+    Height = 25
+    Caption = 'Desligar LED SIRENE'
+    TabOrder = 9
+  end
+end

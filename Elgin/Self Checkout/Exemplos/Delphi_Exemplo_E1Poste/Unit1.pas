@@ -1,0 +1,120 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, FuncoesDLl;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Edit1: TEdit;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    Button9: TButton;
+    procedure Button5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    isConected:bool;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.LigaLedVerde));
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.LigaLedAmarelo));
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.LigaLedVermelho));
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.LigaSirene));
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+var
+ret : Integer;
+begin
+   if isConected = false then
+   begin
+      ret := FuncoesDLL.AbrePortaSerial(Edit1.Text);
+      ShowMessage(IntToStr(ret));
+
+      if ret = 0 then
+      begin
+        Button5.Caption := 'Desconectar';
+        isConected := true;
+      end
+      else
+      begin
+        isConected := false;
+      end;
+   end
+   else
+   begin
+      ret := FuncoesDLL.FechaPortaSerial();
+      ShowMessage(IntToStr(ret));
+
+      if ret = 0 then
+      begin
+        Button5.Caption := 'Conectar';
+        isConected := false;
+      end
+      else
+      begin
+        isConected := true;
+      end;
+   end;
+
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.DesligaLedVerde));
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.DesligaLedAmarelo));
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.DesligaLedVermelho));
+end;
+
+procedure TForm1.Button9Click(Sender: TObject);
+begin
+  ShowMessage(IntToStr(FuncoesDLL.DesligaSirene));
+end;
+
+end.

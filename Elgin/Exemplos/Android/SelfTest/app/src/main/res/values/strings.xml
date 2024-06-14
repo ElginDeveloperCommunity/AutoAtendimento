@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SelfTest</string>
+
+    <string-array name="modelosImpressora">
+        <item>i8</item>
+        <item>i9</item>
+        <item>i7 PLUS</item>
+        <item>MP-4200</item>
+    </string-array>
+
+    <string-array name="modelosBalanca">
+        <item>DP30CK</item>
+        <item>DP</item>
+        <item>SA110</item>
+        <item>DPSC</item>
+    </string-array>
+
+    <string-array name="protocols">
+        <item>PROTOCOLO 0</item>
+        <item>PROTOCOLO 1</item>
+        <item>PROTOCOLO 2</item>
+        <item>PROTOCOLO 3</item>
+        <item>PROTOCOLO 4</item>
+        <item>PROTOCOLO 5</item>
+        <item>PROTOCOLO 6</item>
+        <item>PROTOCOLO 7</item>
+    </string-array>
+
+</resources>

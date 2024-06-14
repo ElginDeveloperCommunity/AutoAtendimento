@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    android:scrollbars="horizontal|vertical"
+    tools:context=".Balanca">
+
+    <TextView
+        android:id="@+id/SelfTest"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Balança"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelfTest" />
+
+    <TextView
+        android:id="@+id/modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Modelo: "
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Spinner
+        android:id="@+id/spinnerModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/modelosBalanca"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/modelo"
+        app:layout_constraintTop_toTopOf="@+id/modelo" />
+
+    <TextView
+        android:id="@+id/protocolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Protocolo: "
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelo" />
+
+    <Spinner
+        android:id="@+id/spinnerProtocols"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/protocols"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/protocolo"
+        app:layout_constraintTop_toTopOf="@+id/protocolo" />
+
+    <TextView
+        android:id="@+id/baudRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:text="BaudRate: "
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextBaudRate"
+        app:layout_constraintStart_toEndOf="@+id/spinnerProtocols"
+        app:layout_constraintTop_toBottomOf="@+id/modelo" />
+
+    <EditText
+        android:id="@+id/editTextBaudRate"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2400"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/baudRate"
+        app:layout_constraintTop_toTopOf="@+id/baudRate" />
+
+    <TextView
+        android:id="@+id/textReturnValueBalanca"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:text="00.00"
+        android:textAlignment="center"
+        android:textColor="#7F7F7F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/protocolo" />
+
+    <TextView
+        android:id="@+id/textValueBalanca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Valor balança (gramas)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textReturnValueBalanca" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textValueBalanca">
+
+        <Button
+            android:id="@+id/buttonConfigurarBalanca"
+            android:layout_width="0dp"
+            android:layout_height="70sp"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:text="Configurar balança"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonLerPeso"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Ler peso"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/elgin_logo_2022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

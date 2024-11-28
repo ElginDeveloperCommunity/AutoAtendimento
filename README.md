@@ -9,6 +9,8 @@ Documentação Leitores [clique Aqui!](https://github.com/ElginDeveloperCommunit
 
 Documentação Poste sinalizador [clique Aqui!](https://github.com/ElginDeveloperCommunity/AutoAtendimento/tree/master/Elgin/Self%20Checkout%20Lumiere/Bibliotecas).
 
+Documentação Geral Bibliotecas [clique Aqui!](https://elgindevelopercommunity.github.io/modules.html).
+
 
 # Confira nossos modelos de terminais
 

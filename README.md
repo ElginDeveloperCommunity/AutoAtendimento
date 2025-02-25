@@ -1,7 +1,12 @@
-# AutoAtendimento
-Terminais de auto atendimento Elgin. Confira abaixo os modelos, e as documentações
+# Terminais de Auto Atendimento e Self Checkouts Elgin
+Para homologação e testes, siga essa ordem:
+1 - Localize seu equipamento na lista de modelos abaixo
+2 - Identifique quais periféricos compõe o equipamento
+3 - Acesse os repositórios de cada periférico para visualizar bibliotecas e documentações
 
-Documentação Impressoras [clique Aqui!](https://github.com/ElginDeveloperCommunity/Impressoras/tree/master/Impressoras%20N%C3%A3o%20Fiscais). 
+
+## Periféricos:
+Impressoras: [i9](https://github.com/ElginDeveloperCommunity/Impressoras/tree/master/Impressoras%20N%C3%A3o%20Fiscais)  -  [i8](https://github.com/ElginDeveloperCommunity/Impressoras/tree/master/Impressoras%20N%C3%A3o%20Fiscais)
 
 Documentação Balanças [clique Aqui!](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/master/Elgin/Balan%C3%A7a).
 

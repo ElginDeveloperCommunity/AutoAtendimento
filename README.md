@@ -8,13 +8,16 @@ Para homologação e testes, siga essa ordem:
 ## Periféricos:
 Impressoras: [i9](https://github.com/ElginDeveloperCommunity/Impressoras/tree/master/Impressoras%20N%C3%A3o%20Fiscais)  -  [i8](https://github.com/ElginDeveloperCommunity/Impressoras/tree/master/Impressoras%20N%C3%A3o%20Fiscais)
 
-DPSC (Dispositivo de Checagem de Peso): [clique Aqui!](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/master/Elgin/Balan%C3%A7a/Linha%20Eletronica%20-%20Checkout).
+DPSC (Dispositivo de Checagem de Peso): [Clique aqui.](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/master/Elgin/Balan%C3%A7a/Linha%20Eletronica%20-%20Checkout)
 
 Leitores:  [EL250](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/master/Elgin/Leitores%20de%20M%C3%A3o/EL250)   -   [EL8600](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/master/Elgin/Leitores%20Fixos/EL8600/Documenta%C3%A7%C3%A3o)
 
-Poste Sinalizador: [clique Aqui!](https://github.com/ElginDeveloperCommunity/AutoAtendimento/tree/master/Elgin/Self%20Checkout%20Lumiere/Bibliotecas).
+Poste Sinalizador: [Clique aqui.](https://github.com/ElginDeveloperCommunity/AutoAtendimento/tree/master/Elgin/Self%20Checkout%20Lumiere/Bibliotecas)
 
-Documentação Geral das Bibliotecas: [clique Aqui!](https://elgindevelopercommunity.github.io/modules.html).
+Documentação Geral das Bibliotecas:  
+[E1_Impressora.](https://elgindevelopercommunity.github.io/group__g0.html)
+[E1_Balança.](https://elgindevelopercommunity.github.io/group__g5.html)
+[E1_Poste.](https://elgindevelopercommunity.github.io/group__g10.html)
 
 
 # Confira nossos modelos de terminais

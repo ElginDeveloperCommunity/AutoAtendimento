@@ -14,7 +14,7 @@ Leitores:  [EL250](https://github.com/ElginDeveloperCommunity/Equipamentos/tree/
 
 Poste Sinalizador: [Clique aqui.](https://github.com/ElginDeveloperCommunity/AutoAtendimento/tree/master/Elgin/Self%20Checkout%20Lumiere/Bibliotecas)
 
-Documentação Geral das Bibliotecas:  
+Documentação Geral das Bibliotecas: 
 [E1_Impressora.](https://elgindevelopercommunity.github.io/group__g0.html)  
 [E1_Balança.](https://elgindevelopercommunity.github.io/group__g5.html)  
 [E1_Poste.](https://elgindevelopercommunity.github.io/group__g10.html)  
